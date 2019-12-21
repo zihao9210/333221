@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+div#wrap1{width:400px;height:200px;background-color:#66ccff;}
+div#wrap2{width:400px;height:200px;position:absolute;top:300px;background-color: #96f;}
+</style>
+</head>
+
+<body>
+<div id="wrap1"><a>赵本山</a></div>
+<div id="wrap2"><a>宋小宝</a></div>
+<script>
+	let owrap1=document.getElementById("wrap1"),
+		owrap2=document.getElementById("wrap2");
+	owrap1.onmouseenter=function(){
+		owrap2.innerHTML="鼠标移入了wrap1";
+	}
+	owrap1.onmouseleave=function(){
+		owrap2.innerHTML="鼠标离开了wrap1";
+	}
+	owrap2.onmouseenter=function(){
+		owrap1.innerHTML="鼠标移入了wrap2";
+	}
+	owrap2.onmouseleave=function(){
+		owrap1.innerHTML="鼠标离开了wrap2";
+	}
+</script>
+	
+	
+	
+	
+</body>
+</html>
